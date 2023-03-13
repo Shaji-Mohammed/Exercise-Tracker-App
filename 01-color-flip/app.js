@@ -1,7 +1,7 @@
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 
-const body = document.querySelector("body")
-body.style.backgroundColor = "lightblue"
+const body = document.querySelector("body");
+body.style.backgroundColor = "lightblue";
 body.innerHTML = `
   <nav>
     <div class="nav-div">
@@ -20,16 +20,15 @@ body.innerHTML = `
   </main>
 `;
 
-const button = document.querySelector(".btn")
-const colorValue = document.querySelector(".color")
+const button = document.querySelector(".btn");
+const colorValue = document.querySelector(".color");
 
-button.addEventListener("click", ()=>{
-  const color = colors[getRandomNumber()]  
-  body.style.backgroundColor =  color
-  colorValue.innerHTML = `${color}`
-})
+button.addEventListener("click", () => {
+  const color = colors[getRandomNumber()];
+  body.style.backgroundColor = color;
+  colorValue.innerHTML = `${color}`;
+});
 
 function getRandomNumber() {
-  return Math.floor(Math.random() * colors.length)
-  
+  return Math.floor(Math.random() * colors.length);
 }
