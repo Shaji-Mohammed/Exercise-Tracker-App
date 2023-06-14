@@ -1,5 +1,5 @@
 const router = require("express").Router();
-let User = require("../models/user.models");
+let User = require("../models/user.model");
 
 // handles incoming HTTP get requests on the /users URL path.
 router.route("/").get((req, res) => {
