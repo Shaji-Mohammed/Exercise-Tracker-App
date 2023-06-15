@@ -1,6 +1,6 @@
 import React from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "./components/navbar.component";
 import ExerciseList from "./components/exercises-list.component";
