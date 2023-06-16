@@ -1,5 +1,4 @@
 const router = require("express").Router();
-const { json } = require("express");
 let Exercise = require("../models/exercise.model");
 
 router.route("/").get((req, res) => {
